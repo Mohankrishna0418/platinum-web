@@ -27,8 +27,8 @@ importers:
         specifier: ^1.9.0
         version: 1.9.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@tanstack/react-query':
-        specifier: ^4.36.1
-        version: 4.36.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: ^5.75.2
+        version: 5.75.2(react@19.1.0)
       better-auth:
         specifier: ^1.2.7
         version: 1.2.7
@@ -745,8 +745,8 @@ packages:
   '@tanstack/form-core@1.9.0':
     resolution: {integrity: sha512-lEXXQdIMW7PcybwnzJ+6VaEC65tWV/ZCgYfR5nC+lApXSlLPN+bp1fJanIclsw5U4dnx3DOxeOy/uzXwJ02wDQ==}
 
-  '@tanstack/query-core@4.36.1':
-    resolution: {integrity: sha512-DJSilV5+ytBP1FbFcEJovv4rnnm/CokuVvrBEtW/Va9DvuJ3HksbXUJEpI0aV1KtuL4ZoO9AVE6PyNLzF7tLeA==}
+  '@tanstack/query-core@5.75.0':
+    resolution: {integrity: sha512-rk8KQuCdhoRkzjRVF3QxLgAfFUyS0k7+GCQjlGEpEGco+qazJ0eMH6aO1DjDjibH7/ik383nnztua3BG+lOnwg==}
 
   '@tanstack/react-form@1.9.0':
     resolution: {integrity: sha512-jbd3QsohonHF93750uuFLTcv1pZeMOmfKP5kZu/VIwc3aZ1Y6NRsesx/CBhdPZD79ApCPZ7WfUmsKMLIER29gw==}
@@ -760,17 +760,10 @@ packages:
       vinxi:
         optional: true
 
-  '@tanstack/react-query@4.36.1':
-    resolution: {integrity: sha512-y7ySVHFyyQblPl3J3eQBWpXZkliroki3ARnBKsdJchlgt7yJLRDUcf4B8soufgiYt3pEQIkBWBx1N9/ZPIeUWw==}
+  '@tanstack/react-query@5.75.2':
+    resolution: {integrity: sha512-8F8VOsWUfSkCFoi62O9HSZT9jDgg28Ln8Z2dYKfRo/O2A0sgvr0uxTuNoon3PPXoDuHofv5V3elBI1M2Gh1MPg==}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-native: '*'
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-      react-native:
-        optional: true
+      react: ^18 || ^19
 
   '@tanstack/react-store@0.7.0':
     resolution: {integrity: sha512-S/Rq17HaGOk+tQHV/yrePMnG1xbsKZIl/VsNWnNXt4XW+tTY8dTlvpJH2ZQ3GRALsusG5K6Q3unAGJ2pd9W/Ng==}
@@ -3000,7 +2993,7 @@ snapshots:
     dependencies:
       '@tanstack/store': 0.7.0
 
-  '@tanstack/query-core@4.36.1': {}
+  '@tanstack/query-core@5.75.0': {}
 
   '@tanstack/react-form@1.9.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
@@ -3012,13 +3005,10 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
-  '@tanstack/react-query@4.36.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@tanstack/react-query@5.75.2(react@19.1.0)':
     dependencies:
-      '@tanstack/query-core': 4.36.1
+      '@tanstack/query-core': 5.75.0
       react: 19.1.0
-      use-sync-external-store: 1.5.0(react@19.1.0)
-    optionalDependencies:
-      react-dom: 19.1.0(react@19.1.0)
 
   '@tanstack/react-store@0.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
