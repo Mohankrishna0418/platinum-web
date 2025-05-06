@@ -1,13 +1,20 @@
-import { PropsWithChildren } from "react";
-import {NavigationBar} from "./components/navigation-bar/NavigationBar";
+import React, { PropsWithChildren } from "react";
+import { FeedNavigationBar } from "./components/navigation-bar/NavigationBar";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { FeedSideBar } from "./components/side-bar/FeedSideBar";
 
-const layout = ({children}: PropsWithChildren) => {
+const FeedLayout = ({ children }: PropsWithChildren) => {
   return (
     <main>
-      <NavigationBar />
-      {children}
+      <FeedNavigationBar />
+      <div className="w-5xl mx-auto mt-4 grid grid-cols-5 gap-4">
+        <div className="col-span-1">
+          <FeedSideBar />
+        </div>
+        <div className="col-span-4">{children}</div>
+      </div>
     </main>
-  )
-}
+  );
+};
 
-export default layout
+export default FeedLayout;
